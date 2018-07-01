@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -9,14 +10,19 @@ public class BMICalculator {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("체중과 키를 적어주세요");
-		System.out.println("예) 체중 80, 키 1.8");
-		
-		double weight = scanner.nextDouble();
-		double height = scanner.nextDouble();
-		
-		double bmi = calcBMI(weight, height);
-		printBMIClassification(bmi);
+		try {
+			System.out.println("체중과 키를 적어주세요");
+			System.out.println("예) 체중 80, 키 1.8");
+			
+			double weight = scanner.nextDouble();
+			double height = scanner.nextDouble();
+			
+			double bmi = calcBMI(weight, height);
+			printBMIClassification(bmi);
+		}
+		catch (InputMismatchException e) {
+			System.out.println("잘못 입력하셨습니다. 숫자를 입력하여 주세요");
+		}
 		
 		scanner.close();
 	}
