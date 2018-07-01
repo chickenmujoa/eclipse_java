@@ -16,13 +16,32 @@ public class BMICalculator {
 		double height = scanner.nextDouble();
 		
 		double bmi = calcBMI(weight, height);
-		
-		System.out.print("당신의 BMI지수는 " + bmi + "입니다");
+		printBMIClassification(bmi);
 		
 		scanner.close();
 	}
 	
 	public static double calcBMI(double weight, double height) {
 		return (weight / (height * height));
+	}
+	
+	public static void printBMIClassification(double bmi) {
+		System.out.println("BMI : " + bmi);
+		
+		if (bmi > 30) {
+			System.out.println("비만입니다");
+		}
+		
+		else if ((bmi >= 25) && (bmi < 30)) {
+			System.out.println("과체중입니다");
+		}
+		
+		else if ((bmi >= 18.5) && (bmi < 25)) {
+			System.out.println("정상체중입니다");
+		}
+		
+		else {
+			System.out.println("저체중입니다");
+		}
 	}
 }
