@@ -1,5 +1,6 @@
 /**
  * 1~10까지 정수중에서 3,6,9를 제외한 숫자의 총 합을 구함
+ * chickenmujoa
  */
 
 public class Game369 {
