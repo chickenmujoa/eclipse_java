@@ -17,7 +17,7 @@ public class HashTableEx {
 		ht.put("C#", 4);
 		
 		// 해시 테이블에 있는 값 꺼내오기
-		Enumeration en = ht.keys();
+		Enumeration<String> en = ht.keys();
 		
 		while(en.hasMoreElements()) {
 			String key = en.nextElement().toString();
