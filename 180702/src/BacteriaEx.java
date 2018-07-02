@@ -12,7 +12,9 @@ public class BacteriaEx {
 		int values[] = new int[10];
 		
 		// 박테리아의 개체수 변화를 배열에 저장하시오
-		
+		for(int i = 0; i < values.length; i++) {
+			values[i] = (int) Math.pow(2, i);
+		}
 		// 출력
 		System.out.println(Arrays.toString(values));
 	}
