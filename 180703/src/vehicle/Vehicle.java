@@ -14,7 +14,7 @@ public class Vehicle {
  
 	public void speedUp(int increment) { // 속도를 낸다
 		if(speed + increment > maxSpeed) {
-			System.out.println("최대 속도 " + maxSpeed + "km/h를 넘             어설 수 없습니다.");
+			System.out.println("최대 속도 " + maxSpeed + "km/h를 넘어설 수 없습니다.");
 		}
 		
 		else {
