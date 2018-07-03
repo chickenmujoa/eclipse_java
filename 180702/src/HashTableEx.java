@@ -1,5 +1,5 @@
 /**
- * Hashmap이나 Hashtable은 저장되는 것을 알 수 없다고 함.
+ * Hashmap이나 Hashtable은 저장되는 것을 사용자가 알 수 없다고 함.
  */
 
 import java.util.Enumeration;
